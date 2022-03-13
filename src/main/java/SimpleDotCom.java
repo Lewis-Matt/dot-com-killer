@@ -1,4 +1,4 @@
-import util.GameHelper;
+import util.SimpleGameHelper;
 
 // Simple version - contains the game object as well as the main application
 public class SimpleDotCom {
@@ -45,7 +45,7 @@ public class SimpleDotCom {
         int numOfGuesses = 0;
 
         // Get user input
-        GameHelper helper = new GameHelper();
+        SimpleGameHelper helper = new SimpleGameHelper();
 
         // Instantiate SimpleDotCom object (our game)
         SimpleDotCom theDotCom = new SimpleDotCom();
