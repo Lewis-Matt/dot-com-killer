@@ -10,7 +10,9 @@ The computer is attempting to start a bunch of dot-com business's.  As a corpora
 
 The computer will place 3 dot-coms on a 7x7 grid (no GUI, this is a command-line application).
 
-      Note that the first iteration of the game (SimpleDotCom) is just a single row of 7 cells and one dot-com that takes up 3 cells. This will be scaled up.  
+      Note that the first iteration of the game (SimpleDotCom) is just a single row of 7 cells and one dot-com that takes up 3 cells. This iteration exists to show:
+         1. Arrays suck and you should use ArrayList
+         2. To start simple, get it working (pass tests) and scale up to meet requirements
 
 # Design process
 
