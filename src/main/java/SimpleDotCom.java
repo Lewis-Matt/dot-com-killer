@@ -37,13 +37,14 @@ public class SimpleDotCom {
         // Return result to the calling method
         return result;
     }
+
     // MAIN - Execution
     public static void main(String[] args) {
         // Variable for tracking # user guesses
         int numOfGuesses = 0;
 
         // Get user input
-        GameHelper helper =new GameHelper();
+        GameHelper helper = new GameHelper();
 
         // Instantiate SimpleDotCom object (our game)
         SimpleDotCom theDotCom = new SimpleDotCom();
@@ -52,6 +53,27 @@ public class SimpleDotCom {
         // Math.random() returns a double between 0 to < 1. *5 would be 0 to < 4.99, cast as int gives 0 to 4.
         int randomNum = (int) (Math.random() * 5);
 
+        // Random locations for the dot-coms
+        int[] locations = {randomNum, randomNum + 1, randomNum + 2};
 
+        theDotCom.setLocationCells(locations);
+
+        // Variable to track whether the game is still alive
+        boolean isAlive = true;
+
+        while (isAlive) {
+            String guess = helper.getUserInput("Enter a number");
+
+            // Check the guess, save to a String
+            String result = theDotCom.checkYourself(guess);
+
+            numOfGuesses++;
+
+            // If we killed the dot-com, set isAlive to false so we exit the loop, print out # guesses
+            if (result.equals("kill")) {
+                isAlive = false;
+                System.out.println("It took you " + numOfGuesses + " guesses to squash the startup.");
+            }
+        }
     }
 }
