@@ -1,5 +1,6 @@
 import util.GameHelper;
 
+// Simple version - contains the game object as well as the main application
 public class SimpleDotCom {
 
     int[] locationCells;
