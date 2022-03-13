@@ -1,9 +1,11 @@
 package util;
-import java.io.*;
 
-// For use with SimpleDotCom
-// This class serves to get the user input
-public class SimpleGameHelper {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+// For use with DotComBust and DotCom
+public class GameHelper {
     public String getUserInput(String prompt) {
         String inputLine = null;
         System.out.println(prompt + " ");
@@ -23,4 +25,6 @@ public class SimpleGameHelper {
         }
         return inputLine;
     }
+
+}
 }

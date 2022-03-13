@@ -3,11 +3,20 @@ import java.util.ArrayList;
 
 public class DotCom {
     private ArrayList<String> locationCells;
+    private String name;
     // No longer need numOfHits;
 
     // Changed int[] to an ArrayList of Strings
     public void setLocationCells(ArrayList<String> loc) {
         locationCells = loc;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getName() {
+        return name;
     }
 
     // Better argument name
@@ -25,6 +34,7 @@ public class DotCom {
             // If the list is empty, then we killed it
             if (locationCells.isEmpty()) {
                 result = "kill";
+                System.out.println("You bankrupt " + name + "!");
             } else {
                 result = "hit";
             }
