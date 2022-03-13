@@ -10,6 +10,8 @@ The computer is attempting to start a bunch of dot-com business's.  As a corpora
 
 The computer will place 3 dot-coms on a 7x7 grid (no GUI, this is a command-line application).
 
+      Note that the first iteration of the game (SimpleDotCom) is just a single row of 7 cells and one dot-com that takes up 3 cells. This will be scaled up.  
+
 # Design process
 
 ### High-Level
