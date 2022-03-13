@@ -3,7 +3,7 @@ package util;
 import java.io.*;
 
 // This class serves to get the user input
-public class GameHelper {
+public class SimpleGameHelper {
     public String getUserInput(String prompt) {
         String inputLine = null;
         System.out.println(prompt + " ");
