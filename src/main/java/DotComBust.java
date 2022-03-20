@@ -27,6 +27,7 @@ public class DotComBust {
 
         for (DotCom dotComToSet : dotComsList) {
             ArrayList<String> newLocation = helper.placeDotCom(3);
+            dotComToSet.setLocationCells(newLocation);
         } //forEach
     } // setup
 
