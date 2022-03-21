@@ -18,7 +18,10 @@ Note that the first iteration of the game (SimpleDotCom) is just a single row of
          3. How/when to refactor
 
 # Use
-Run the simple version or the robust version
+<hr>
+
+Run the simple version or the robust version:
+
 1. java SimpleDotCom
     1. enter a number 0-6
     2. keep entering until you sink the dot-com (3 hits)
@@ -27,7 +30,8 @@ Run the simple version or the robust version
     2. 3 hits(cells) per dot-com, 3 dot-coms total
         1. example input: a3, d6, etc.
     
-# Design process
+## Design Process
+<hr>
 
 ### High-Level
 1. User starts the game
