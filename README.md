@@ -17,6 +17,16 @@ Note that the first iteration of the game (SimpleDotCom) is just a single row of
          2. To start simple, get it working (pass tests) and scale up to meet requirements
          3. How/when to refactor
 
+# Use
+Run the simple version or the robust version
+1. java SimpleDotCom
+    1. enter a number 0-6
+    2. keep entering until you sink the dot-com (3 hits)
+2. java DotComBust
+    1. enter a cell [a-f][0-6]
+    2. 3 hits(cells) per dot-com, 3 dot-coms total
+        1. example input: a3, d6, etc.
+    
 # Design process
 
 ### High-Level
